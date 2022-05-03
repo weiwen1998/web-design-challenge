@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Landing Page</title>
+  <title>Visualisation 1</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Landing Page <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="web-assignment.html">Landing Page <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Comparison</a>
@@ -26,38 +26,38 @@
           <a class="nav-link" href="#">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="visualisation1.html">Visualisation 1</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Visualisation 1</a>
             <a class="dropdown-item" href="visualisation2.html">Visualisation 2</a>
             <a class="dropdown-item" href="visualisation3.html">Visualisation 3</a>
             <a class="dropdown-item" href="visualisation4.html">Visualisation 4</a>
           </div>
         </li>
       </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
 
-  <main>
-    <div class="col-md-6">
-      <section class="posts">
-        <article class="post">
-          <h3>Summary</h3>
-          <p>This site describes how a variety of different factors in cities would differ between each other based on the levels of latitude, and the factors that would be in focus
-          would include maximum temperature, humidity, cloudiness and wind speed.
-          </p>
-    </div>
-    <div class="col-md-6">
-      <section class="posts">
-        <article class="post">
-          <h3>Summary</h3>
-          <p>This site describes how a variety of different factors in cities would differ between each other based on the levels of latitude, and the factors that would be in focus
-          would include maximum temperature, humidity, cloudiness and wind speed.
-          </p>
-    </div>
+<main>
+  <section class="posts">
+    <article class="post">
+      <h3>Latitude vs. Maximum Temperature</h3>
+      <p>Based on the graph, we are able to tell that there is a parabolic trend since the maximum temperature remains very high near the Equator, whilst it is cooler towards the poles.
+      </p>
 </body>
 
+<section>
+  <article>
+  <a target="_blank" href="Data Analytics Bootcamp/Assignments/web-design-challenge/Images/Lat_v_Max_Temp.png">
+    <img src="Data Analytics Bootcamp/Assignments/web-design-challenge/Images/Lat_v_Max_Temp.png" alt="Maximum Temperature">
+  </a>
+  <p><em>Maximum Temperature Map</em></p>
+  </article>
+</section>
 </html>
