@@ -1,63 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en-us">
+  <head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Landing Page <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="visualisation1.html">Visualisation 1</a>
-            <a class="dropdown-item" href="visualisation2.html">Visualisation 2</a>
-            <a class="dropdown-item" href="visualisation3.html">Visualisation 3</a>
-            <a class="dropdown-item" href="visualisation4.html">Visualisation 4</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Resources/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="Resources/stylesh.css" media="screen">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+            </div>
           </div>
-        </li>
-      </ul>
-      </form>
-    </div>
-  </nav>
 
-  <main>
-    <div class="col-md-6">
-      <section class="posts">
-        <article class="post">
-          <h3>Summary</h3>
-          <p>This site describes how a variety of different factors in cities would differ between each other based on the levels of latitude, and the factors that would be in focus
-          would include maximum temperature, humidity, cloudiness and wind speed.
-          </p>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="visualisation1.html">Visualisation 1</a></li>
+                  <li><a href="visualisation2.html">Visualisation 2</a></li>
+                  <li><a href="visualisation3.html">Visualisation 3</a></li>
+                  <li><a href="visualisation4.html">Visualisation 4</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+              <li><a href="#">Landing Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            <hr class="description-hr"/>
+            <img src="Images/Lat_v_Max_Temp.png" alt="" id="description-image"/>
+            <p>This project describes how the latitude of a particular country or area would compare between each other
+              based on the variety of different factors including maximum temperature, humidity, cloudiness and wind speed.
+            </p>
+            <p></p>
+          </article>
+        </div>
+        <div class="col-md-4">
+
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualisations</h2>
+              <hr />
+              <div id="images">
+                <a href="visualisation1.html"><img src="Images/Lat_v_Max_Temp.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                <a href="visualisation2.html"><img src="Images/Lat_v_Humidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="visualisation3.html"><img src="Images/Lat_v_Cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="visualisation4.html"><img src="Images/Lat_v_Wind_Speed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
-    <div class="col-md-6">
-      <section class="posts">
-        <article class="post">
-          <h3>Summary</h3>
-          <p>This site describes how a variety of different factors in cities would differ between each other based on the levels of latitude, and the factors that would be in focus
-          would include maximum temperature, humidity, cloudiness and wind speed.
-          </p>
-    </div>
-</body>
+
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
 
 </html>
+
